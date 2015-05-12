@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:padding="12dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rl_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/img_welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="欢迎登陆"
+                    android:gravity="center"
+                    android:src="@drawable/about" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_welcome"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="\n\n			中北高校通, 是由中北大学计软件学院开发的一款中北社区移动生活类手机App.高校通集多功能与一
+身，可以轻松让你获得校园一手资讯，集教学资讯、娱乐、购物、出行于一身的App，相信会是你生活的得力助手。
+\n			高校通团队一直致力于中北高校通的开发工作，希望能够得到更多校友的支持与建议，我们将不断的更新和完善。同时也乐意和相关的校友合作，欢迎联系中北高校通技术团队。
+\n\n联系方式: 
+\n联系人		高校通团队
+\n电话			18235139300
+\nQQ				451682583
+\n"
+                android:textSize="15sp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_welcome"
+                android:gravity="center"
+                android:text="中北高校通\nVersion 1.0"
+                android:textSize="12sp"
+                android:typeface="monospace" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

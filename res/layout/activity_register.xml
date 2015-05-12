@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical" >
+
+      
+
+        <LinearLayout
+            android:id="@+id/linear_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/security_row_center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#D3C9BF" >
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/Redit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/security_row_username"
+                android:hint="用户名"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#D3C9BF" >
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/Redit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Redit_name"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/security_row_password"
+                android:drawableRight="@drawable/security_row_forgot"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp" />
+                                    
+                      
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#D3C9BF" >
+            </LinearLayout>
+            
+             
+
+            <EditText
+                android:id="@+id/Redit_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_profile_gender_normal"
+                android:hint="性别"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#D3C9BF" >
+            </LinearLayout>
+            
+             <EditText
+                android:id="@+id/Redit_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_profile_age_normal"
+                android:hint="年龄"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#D3C9BF" >
+            </LinearLayout>
+            
+            <EditText
+                android:id="@+id/Redit_grad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_profile_health_normal"
+                android:hint="年级"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#D3C9BF" >
+            </LinearLayout>
+	
+            <EditText
+                android:id="@+id/Redit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_profile_tags_normal"
+                android:hint="电话号码"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#D3C9BF" >
+            </LinearLayout>
+            
+             
+
+            <EditText
+                android:id="@+id/Redit_deriction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_profile_region_normal"
+                android:hint="东区/西区"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp" />
+
+            
+            
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#D3C9BF" >
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/Redit_cademy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_profile_health_normal"
+                android:hint="专业"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#D3C9BF" >
+            </LinearLayout>
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/security_row_button"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="下一步"
+                android:textColor="#000000" 
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爪机注册无需注册码"
+            android:textColor="#696969" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每只爪机仅能注册一个帐号，请呵护对待"
+            android:textColor="#696969" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp" 
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有帐号？"
+            android:textColor="#696969" />
+        <Button
+            android:id="@+id/startlogin"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:background="@drawable/top_bar_bg"
+            android:text="直接登录"
+            android:textSize="15dp"
+            
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>
