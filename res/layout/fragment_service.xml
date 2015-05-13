@@ -220,7 +220,7 @@
                     android:orientation="vertical"
                     android:paddingTop="10dp"
                     android:paddingLeft="5dp"
-                    android:id="@+id/img_TQ" >
+                    android:id="@+id/img_ZB" >
                     
                     <ImageView
                         
@@ -248,10 +248,11 @@
                     android:layout_height="100dp"                   
                     android:orientation="vertical"
                     android:paddingTop="10dp"
-                    android:paddingLeft="5dp" >
+                    android:paddingLeft="5dp"
+                    android:id="@+id/img_ES" >
                     
                     <ImageView
-                        android:id="@+id/img_TQ"
+                        
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
@@ -313,14 +314,14 @@
                     android:orientation="vertical"
                     android:paddingLeft="5dp"
                     android:paddingTop="10dp"
-                    android:id="@+id/img_XX" >
+                    android:id="@+id/img_XXSY" >
                     
                     <ImageView
                         
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_loc"                                              
+                        android:background="@drawable/icon_post_enable"                                              
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -340,14 +341,15 @@
                     android:layout_weight="1.0"
                     android:orientation="vertical"
                     android:paddingLeft="5dp"
-                    android:paddingTop="10dp" >
+                    android:paddingTop="10dp" 
+                    android:id="@+id/img_JWXX">
                     
                     <ImageView
-                        android:id="@+id/img_TQ"
+                        
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_grid_outdoor"                                             
+                        android:background="@drawable/icon_comment"                                             
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -355,7 +357,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
                         android:padding="5dp"
-                        android:text="住宿出行"
+                        android:text="教务信息"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -367,14 +369,15 @@
                     android:layout_weight="1.0"
                     android:orientation="vertical"
                     android:paddingLeft="5dp"
-                    android:paddingTop="10dp" >
+                    android:paddingTop="10dp"
+                    android:id="@+id/img_ZYHD" >
                     
                     <ImageView
-                        android:id="@+id/img_TQ"
+                        
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_grid_market"                                              
+                        android:background="@drawable/icon_close_large"                                              
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -382,7 +385,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
                         android:padding="5dp"
-                        android:text="周边餐馆"
+                        android:text="综艺活动"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -394,14 +397,15 @@
                     android:layout_weight="1.0"
                     android:orientation="vertical"
                     android:paddingLeft="5dp"
-                    android:paddingTop="10dp" >
+                    android:paddingTop="10dp"
+                    android:id="@+id/img_XYWH" >
                     
                     <ImageView
-                        android:id="@+id/img_TQ"
+                        
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_grid_hire"                                            
+                        android:background="@drawable/icon_camera"                                            
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -409,7 +413,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
                         android:padding="5dp"
-                        android:text="失物招领"
+                        android:text="校园文化"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -421,14 +425,15 @@
                     android:layout_weight="1.0"
                     android:orientation="vertical"
                     android:paddingTop="10dp"
-                    android:paddingLeft="5dp" >
+                    android:paddingLeft="5dp"
+                    android:id="@+id/img_ZZJG" >
                     
                     <ImageView
-                        android:id="@+id/img_TQ"
+                        
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_grid_party"                                               
+                        android:background="@drawable/icon_album"                                               
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -437,7 +442,7 @@
                         android:layout_weight="1.0"
                         android:layout_gravity="center_horizontal"
                         android:padding="5dp"
-                        android:text="二手交易"
+                        android:text="组织机构"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -485,14 +490,15 @@
                     android:layout_weight="1.0"
                     android:orientation="vertical"
                     android:paddingLeft="5dp"
-                    android:paddingTop="10dp" >
+                    android:paddingTop="10dp"
+                    android:id="@+id/img_CJCX" >
                     
                     <ImageView
-                        android:id="@+id/img_TQ"
+                        
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_loc"                                              
+                        android:background="@drawable/computer"                                              
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -500,7 +506,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
                         android:padding="5dp"
-                        android:text="地理位置"
+                        android:text="成绩查询"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -512,14 +518,15 @@
                     android:layout_weight="1.0"
                     android:orientation="vertical"
                     android:paddingLeft="5dp"
-                    android:paddingTop="10dp" >
+                    android:paddingTop="10dp"
+                    android:id="@+id/img_TCBM" >
                     
                     <ImageView
-                        android:id="@+id/img_TQ"
+                        
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_grid_outdoor"                                             
+                        android:background="@drawable/discuss"                                             
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -527,7 +534,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
                         android:padding="5dp"
-                        android:text="住宿出行"
+                        android:text="体测报名"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -539,14 +546,15 @@
                     android:layout_weight="1.0"
                     android:orientation="vertical"
                     android:paddingLeft="5dp"
-                    android:paddingTop="10dp" >
+                    android:paddingTop="10dp"
+                    android:id="@+id/img_TYXX" >
                     
                     <ImageView
-                        android:id="@+id/img_TQ"
+                        
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_grid_market"                                              
+                        android:background="@drawable/ic_menu_copy_holo_light"                                              
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -554,7 +562,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
                         android:padding="5dp"
-                        android:text="周边餐馆"
+                        android:text="体育选修"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -566,14 +574,15 @@
                     android:layout_weight="1.0"
                     android:orientation="vertical"
                     android:paddingLeft="5dp"
-                    android:paddingTop="10dp" >
+                    android:paddingTop="10dp"
+                    android:id="@+id/img_KCXX" >
                     
                     <ImageView
-                        android:id="@+id/img_TQ"
+                        
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_grid_hire"                                            
+                        android:background="@drawable/ic_menu_myplaces"                                            
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -581,7 +590,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
                         android:padding="5dp"
-                        android:text="失物招领"
+                        android:text="课程选修"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -593,14 +602,15 @@
                     android:layout_weight="1.0"
                     android:orientation="vertical"
                     android:paddingTop="10dp"
-                    android:paddingLeft="5dp" >
+                    android:paddingLeft="5dp"
+                    android:id="@+id/img_TSYY" >
                     
                     <ImageView
-                        android:id="@+id/img_TQ"
+                        
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_grid_party"                                               
+                        android:background="@drawable/ic_menu_info_details"
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -609,7 +619,7 @@
                         android:layout_weight="1.0"
                         android:layout_gravity="center_horizontal"
                         android:padding="5dp"
-                        android:text="二手交易"
+                        android:text="图书预约"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -664,7 +674,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_loc"                                              
+                        android:background="@drawable/ic_setting_privacy"                                              
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -672,7 +682,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
                         android:padding="5dp"
-                        android:text="地理位置"
+                        android:text="成绩管理"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -691,7 +701,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_grid_outdoor"                                             
+                        android:background="@drawable/ic_setting_account"                                             
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -699,7 +709,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
                         android:padding="5dp"
-                        android:text="住宿出行"
+                        android:text="课程安排"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -718,7 +728,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_grid_market"                                              
+                        android:background="@drawable/ic_setting_about"                                              
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -726,7 +736,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
                         android:padding="5dp"
-                        android:text="周边餐馆"
+                        android:text="任务分配"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -745,7 +755,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_grid_hire"                                            
+                        android:background="@drawable/ic_service_normal"                                            
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -753,7 +763,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
                         android:padding="5dp"
-                        android:text="失物招领"
+                        android:text="绩效考核"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     
@@ -772,7 +782,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1.0"
-                        android:background="@drawable/ic_grid_party"                                               
+                        android:background="@drawable/ic_message_normal"                                               
                         android:gravity="center"
                         android:singleLine="true"/> 
                     <TextView
@@ -781,7 +791,7 @@
                         android:layout_weight="1.0"
                         android:layout_gravity="center_horizontal"
                         android:padding="5dp"
-                        android:text="二手交易"
+                        android:text="相亲交友"
                         android:textColor="#000000"
                         android:layout_marginLeft="5dp" />                                           />
                     

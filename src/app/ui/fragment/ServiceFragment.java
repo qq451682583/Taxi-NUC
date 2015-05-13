@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -13,6 +14,7 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
@@ -23,7 +25,7 @@ import app.ui.activity.FastActivity;
 import app.ui.activity.R;
 import app.ui.adapter.ViewPaperAdapter;
 
-public class ServiceFragment extends BaseFragment implements Runnable{
+public class ServiceFragment extends BaseFragment implements Runnable,OnClickListener{
 
     private ViewPager mViewPager;
     private ViewGroup group;
@@ -34,6 +36,22 @@ public class ServiceFragment extends BaseFragment implements Runnable{
     private AtomicInteger what = new AtomicInteger(0);
     private boolean isContinue = true;
     private LinearLayout mLinearLayout;
+    private LinearLayout mTQ;
+    private LinearLayout mWZ;
+    private LinearLayout mCX;
+    private LinearLayout mZL;
+    private LinearLayout mZB;
+    private LinearLayout mES;
+    private LinearLayout mXXSY;
+    private LinearLayout mJWXX;
+    private LinearLayout mZYHD;
+    private LinearLayout mXYWH;
+    private LinearLayout mZHJG;
+    private LinearLayout mCJCX;
+    private LinearLayout mTCBM;
+    private LinearLayout mTYXX;
+    private LinearLayout mKCXX;
+    private LinearLayout mTSYY;
     private final Handler viewHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -53,8 +71,38 @@ public class ServiceFragment extends BaseFragment implements Runnable{
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        mTQ = (LinearLayout)view.findViewById(R.id.img_TQ);
+        mJWXX = (LinearLayout)view.findViewById(R.id.img_JWXX);
+        mKCXX = (LinearLayout)view.findViewById(R.id.img_KCXX);
+        mCX = (LinearLayout)view.findViewById(R.id.img_CX);
+        mCJCX = (LinearLayout)view.findViewById(R.id.img_CJCX);
+        mES = (LinearLayout)view.findViewById(R.id.img_ES);
+        mTCBM = (LinearLayout)view.findViewById(R.id.img_TCBM);
+        mTSYY = (LinearLayout)view.findViewById(R.id.img_TSYY);
+        mTYXX = (LinearLayout)view.findViewById(R.id.img_TYXX);
+        mWZ = (LinearLayout)view.findViewById(R.id.img_WZ);
+        mXXSY = (LinearLayout)view.findViewById(R.id.img_XXSY);
+        mXYWH = (LinearLayout)view.findViewById(R.id.img_XYWH);
+        mZB = (LinearLayout)view.findViewById(R.id.img_ZB);
+        mZHJG = (LinearLayout)view.findViewById(R.id.img_ZZJG);
+        mZYHD = (LinearLayout)view.findViewById(R.id.img_ZYHD);
         mViewPager = (ViewPager)view.findViewById(R.id.viewpager);
         group = (ViewGroup)view.findViewById(R.id.viewGroup);
+        mTQ.setOnClickListener(this);
+        mWZ.setOnClickListener(this);
+        mCX.setOnClickListener(this);
+        mZB.setOnClickListener(this);
+        mXXSY.setOnClickListener(this);
+        mJWXX.setOnClickListener(this);
+        mZYHD.setOnClickListener(this);
+        mXYWH.setOnClickListener(this);
+        mZHJG.setOnClickListener(this);
+        mCJCX.setOnClickListener(this);
+        mTCBM.setOnClickListener(this);
+        mTYXX.setOnClickListener(this);
+        mKCXX.setOnClickListener(this);
+        mTSYY.setOnClickListener(this);
+        
         
         mLinearLayout = (LinearLayout)view.findViewById(R.id.img_CG);
         mLinearLayout.setOnClickListener(new View.OnClickListener() {
@@ -115,7 +163,10 @@ public class ServiceFragment extends BaseFragment implements Runnable{
     }
 
 
-    private final class GuidePageChangeListener implements OnPageChangeListener {
+   
+
+
+	private final class GuidePageChangeListener implements OnPageChangeListener {
 
         @Override
         public void onPageScrollStateChanged(int arg0) {
@@ -185,4 +236,56 @@ public class ServiceFragment extends BaseFragment implements Runnable{
             }
         }
     }
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.img_TQ:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.weather.com.cn/static/html/weather.shtml")));
+			break;
+		case R.id.img_WZ:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://map.baidu.com/")));
+			break;
+		case R.id.img_CX:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://bj.meituan.com/?utm_campaign=baidu&utm_medium=brand&utm_source=baidu&utm_content=1&utm_term=&_rdt=1")));
+			break;
+		case R.id.img_ZB:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ctrip.com/?utm_source=baidu&utm_medium=cpc&utm_campaign=baidu81&campaign=CHNbaidu81&adid=index&gclid=&isctrip=T")));
+			break;
+		case R.id.img_XXSY:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.nuc.edu.cn/")));
+			break;
+		case R.id.img_ZZJG:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.nuc.edu.cn/zzjg/jgzl.htm")));
+			break;
+		case R.id.img_JWXX:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www1.nuc.edu.cn/jwc/")));
+			break;
+		case R.id.img_XYWH:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www4.nuc.edu.cn/xtw/index.php")));
+			break;
+		case R.id.img_ZYHD:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.nucxiaoxueshenghui.icoc.cc/")));
+			break;
+		case R.id.img_CJCX:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://202.207.177.39:8088/")));
+			break;
+		case R.id.img_TYXX:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://202.207.177.23/")));
+			break;
+		case R.id.img_TCBM:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://202.207.177.9/tyxyy/")));
+			break;
+		case R.id.img_KCXX:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://202.207.177.15:7777/zhxt_bks/zhxt_bks.html")));
+			break;
+		case R.id.img_TSYY:
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://lib.nuc.edu.cn/new/index1.action")));
+			break;
+		
+
+		default:
+			break;
+		}
+		
+	}
 }

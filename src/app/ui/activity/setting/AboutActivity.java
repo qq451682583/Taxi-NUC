@@ -2,11 +2,14 @@
 package app.ui.activity.setting;
 
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import app.ui.TitleActivity;
@@ -57,8 +60,8 @@ public class AboutActivity extends TitleActivity {
     public void onClick(View v) {
         super.onClick(v);
         switch (v.getId()) {
-           /* case R.id.layout_official_website:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kuaidian.mobi")));
+            case R.id.layout_official_website:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://nuctaxi.bmob.cn")));
                 break;
 
             case R.id.layout_rate_app:
@@ -70,28 +73,17 @@ public class AboutActivity extends TitleActivity {
                     Log.e(TAG, e.getMessage());
                 }
                 break;
-			*/
+			
             case R.id.layout_help:
                 startActivity(new Intent(this, HelpActivity.class));
                 break;
 
-/*            case R.id.layout_feedback:
-                Intent feedbackIntent = new Intent(Intent.ACTION_SEND);
-                final String[] tos={getString(R.string.text_email_address)};
-                feedbackIntent.putExtra(Intent.EXTRA_EMAIL, tos);
-                feedbackIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.text_email_title));
-                feedbackIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.text_email_content));
-                feedbackIntent.setType("message/rfc822");
-                try {
-                    startActivity(Intent.createChooser(feedbackIntent, getString(R.string.text_email_dialog_title)));
-                } catch (ActivityNotFoundException e) {
-                    Log.e(TAG, e.getMessage());
-                }
-                break;
+            case R.id.layout_feedback:
+                
 
             case R.id.layout_update:
                 break;
-*/
+
             default:
                 break;
         }

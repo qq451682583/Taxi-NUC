@@ -43,7 +43,7 @@
 
                 <TextView
                     android:textColor="@color/gray"
-                    android:text="大冬瓜"
+                    android:text=""
                     android:id="@+id/tv_username"
                     style="@style/text_18"
                     android:layout_width="wrap_content"
@@ -86,7 +86,7 @@
 
                 <TextView
                      android:textColor="@color/gray"
-                    android:text="男"
+                    android:text=""
                     android:id="@+id/tv_sex"
                     style="@style/text_18"
                     android:layout_width="wrap_content"
@@ -127,7 +127,7 @@
 
                 <TextView
                      android:textColor="@color/gray"
-                    android:text="90后"
+                    android:text=""
                     android:id="@+id/tv_age"
                     style="@style/text_18"
                     android:layout_width="wrap_content"
@@ -169,7 +169,7 @@
 
                 <TextView
                      android:textColor="@color/gray"
-                    android:text="北京市"
+                    android:text=""
                     android:id="@+id/tv_gard"
                     style="@style/text_18"
                     android:layout_width="wrap_content"
@@ -211,7 +211,7 @@
 
                  <TextView
                       android:textColor="@color/gray"
-                    android:text="大专"
+                    android:text=""
                     android:id="@+id/tv_dopart"
                     style="@style/text_18"
                     android:layout_width="wrap_content"
@@ -262,7 +262,7 @@
 
                   <TextView
                        android:textColor="@color/gray"
-                    android:text="计算机"
+                    android:text=""
                     android:id="@+id/tv_school"
                     style="@style/text_18"
                     android:layout_width="wrap_content"
@@ -303,7 +303,7 @@
 
                 <TextView
                      android:textColor="@color/gray"
-                    android:text="18235139300"
+                    android:text=""
                     android:id="@+id/tv_phone"
                     style="@style/text_18"
                     android:layout_width="wrap_content"
