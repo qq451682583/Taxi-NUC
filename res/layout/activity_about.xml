@@ -16,7 +16,7 @@
         android:layout_marginBottom="18dp"
         android:layout_marginTop="18dp"
         android:drawablePadding="12dp"
-        android:drawableTop="@drawable/nuc"
+        android:drawableTop="@drawable/nuctaxi"
         android:textColor="@color/gray"
         android:textStyle="bold" />
 

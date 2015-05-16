@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout
+            android:id="@+id/Layout_TABLE_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/table_margin"
+            android:background="@color/table_background"
+            android:padding="@dimen/table_padding" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/row_selector" >
+
+                <ImageView
+                    android:id="@+id/myImg"
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/table_margin"
+                    android:src="@drawable/nuctaxi" />
+
+                <RelativeLayout
+                    android:id="@+id/lable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:layout_marginLeft="@dimen/row_padding_left"
+                    android:layout_toRightOf="@+id/myImg" >
+
+                    <TextView
+                        android:id="@+id/myTitle"
+                        style="@style/text_black_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="高校通官方" />
+
+                    <TextView
+                        style="@style/text_14"
+                        android:id="@+id/Time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/row_padding_right"
+                        android:text="3月5日 13:35"
+                        android:textColor="@color/gray"/>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/text_14"
+                    android:id="@+id/myText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/myImg"
+                    android:layout_alignLeft="@+id/lable"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="2015年的公务员考试马上开始报名，请那啥啥啥的" />
+            </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>

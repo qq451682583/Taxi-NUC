@@ -3,7 +3,10 @@ package app.ui.activity;
 
 
 
+import cn.bmob.push.BmobPush;
 import cn.bmob.v3.Bmob;
+import cn.bmob.v3.BmobInstallation;
+import cn.bmob.v3.BmobPushManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
@@ -15,15 +18,17 @@ import app.ui.NextActivity;
 
 public class MainActivity extends Activity {
 
-	private String APPID ="c3e5a96f0c1f1aa289b81fd6001e4f55";
+	public static  String APPID ="c3e5a96f0c1f1aa289b81fd6001e4f55";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-
+		BmobPushManager<BmobInstallation> bmobPush;
 		 // 初始化 Bmob SDK
 		Bmob.initialize(this, APPID);
-
+		bmobPush = new BmobPushManager<BmobInstallation>(this);		
+		BmobInstallation.getCurrentInstallation(this).save();
+		BmobPush.startWork(this, MainActivity.APPID);
 		 requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.start);
 		new Handler().postDelayed(new Runnable(){
