@@ -23,6 +23,8 @@ import android.widget.LinearLayout;
 import app.ui.BaseFragment;
 import app.ui.activity.FastActivity;
 import app.ui.activity.R;
+import app.ui.activity.SecondActivity;
+import app.ui.activity.setting.AboutActivity;
 import app.ui.adapter.ViewPaperAdapter;
 
 public class ServiceFragment extends BaseFragment implements Runnable,OnClickListener{
@@ -88,6 +90,7 @@ public class ServiceFragment extends BaseFragment implements Runnable,OnClickLis
         mZYHD = (LinearLayout)view.findViewById(R.id.img_ZYHD);
         mViewPager = (ViewPager)view.findViewById(R.id.viewpager);
         group = (ViewGroup)view.findViewById(R.id.viewGroup);
+        mZL = (LinearLayout)view.findViewById(R.id.img_ZL);
         mTQ.setOnClickListener(this);
         mWZ.setOnClickListener(this);
         mCX.setOnClickListener(this);
@@ -102,6 +105,7 @@ public class ServiceFragment extends BaseFragment implements Runnable,OnClickLis
         mTYXX.setOnClickListener(this);
         mKCXX.setOnClickListener(this);
         mTSYY.setOnClickListener(this);
+        mZL.setOnClickListener(this);
         
         
         mLinearLayout = (LinearLayout)view.findViewById(R.id.img_CG);
@@ -239,6 +243,9 @@ public class ServiceFragment extends BaseFragment implements Runnable,OnClickLis
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
+		case R.id.img_ZL:
+			startActivity(new Intent(getActivity(), SecondActivity.class));
+			break;
 		case R.id.img_TQ:
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.weather.com.cn/static/html/weather.shtml")));
 			break;

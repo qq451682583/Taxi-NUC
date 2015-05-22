@@ -33,10 +33,7 @@ public class SessionFragment extends BaseFragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-    	BmobPush.setDebugMode(true);		
-		bmobPush = new BmobPushManager<BmobInstallation>(getActivity());		
-		BmobInstallation.getCurrentInstallation(getActivity()).save();
-		BmobPush.startWork(getActivity(), MainActivity.APPID);	
+    		
 		
         return inflater.inflate(R.layout.fragment_session, container, false);
     }
@@ -47,7 +44,11 @@ public class SessionFragment extends BaseFragment{
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         
-        
+        BmobPush.setDebugMode(true);		
+		bmobPush = new BmobPushManager<BmobInstallation>(getActivity());		
+		BmobInstallation.getCurrentInstallation(getActivity()).save();
+		BmobPush.startWork(getActivity(), MainActivity.APPID);
+		
 		mListview = (ListView)view.findViewById(R.id.mylistView);
 		ArrayList<Map<String,Object>> mData= new ArrayList<Map<String,Object>>();
 		Map<String,Object> item = new HashMap<String,Object>();  
