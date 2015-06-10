@@ -22,14 +22,9 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		BmobPushManager<BmobInstallation> bmobPush;
 		 // 初始化 Bmob SDK
-		Bmob.initialize(this, APPID);
-		bmobPush = new BmobPushManager<BmobInstallation>(this);		
-		BmobInstallation.getCurrentInstallation(this).save();
-		BmobPush.startWork(this, MainActivity.APPID);
-		 requestWindowFeature(Window.FEATURE_NO_TITLE);
+		Bmob.initialize(this, APPID);		
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.start);
 		new Handler().postDelayed(new Runnable(){
 

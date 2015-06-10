@@ -29,7 +29,7 @@ import cn.bmob.v3.datatype.BmobDate;
 import cn.bmob.v3.datatype.BmobGeoPoint;
 
 
-public class MyMessageReceiv extends BroadcastReceiver {
+public class MyMessageReceiver extends BroadcastReceiver {
 	
 	@SuppressWarnings("deprecation")
 	@Override

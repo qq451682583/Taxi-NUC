@@ -8,6 +8,7 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="19" />
     
+    
 	<uses-permission android:name="android.permission.INTERNET"/>
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -15,19 +16,27 @@
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 	<uses-permission android:name="android.permission.READ_LOGS"/>
 	
-	<!-- BmobPush SDK权限 -->
-    <permission android:protectionLevel="normal" android:name="cn.bmob.permission.push"></permission>
-    <uses-permission android:name="cn.bmob.permission.push"/><!-- 添加自定义的权限-->
-    <uses-permission android:name="android.permission.READ_LOGS" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />    
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.VIBRATE" />
+	<!-- Push SDK权限 start -->
+    <permission
+        android:name="cn.bmob.permission.push"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <uses-permission android:name="cn.bmob.permission.push" /> <!-- 添加自定义的权限 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!-- Push SDK权限 end -->
+    <!-- 允许网络连接以及网络状态改变 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 文件存储 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
     
     <application
         android:allowBackup="true"
@@ -110,6 +119,12 @@
                 <action android:name="android.intent.action.USER_PRESENT" />
                 <!-- 监听网络连通性 -->
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />               
+            </intent-filter>
+        </receiver>
+        <receiver android:name="app.nuc.push.MyMessageReceiver" 
+            	android:permission="cn.bmob.push.action.MESSAGE">
+            <intent-filter>
+                <action android:name="cn.bmob.push.action.MESSAGE" />
             </intent-filter>
         </receiver>
     </application>
